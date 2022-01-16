@@ -10,6 +10,9 @@ import java.util.Map;
  */
 public class Solution7 {
     public static String longestCommonPrefix(String[] strs) {
+        if (strs == null || strs.length == 0) {
+            return "";
+        }
         String standard = strs[0];
         int count = 0;
         for (int i = 1; i < strs.length; i++) {
